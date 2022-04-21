@@ -1,0 +1,16 @@
+h1 {
+    color:blue;
+    font-family: "Arial Rounded MT Bold";
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-family: "Times New Roman";
+    text-align: center;
+
+}
+body {
+    background-color: yellow;
+
+}
