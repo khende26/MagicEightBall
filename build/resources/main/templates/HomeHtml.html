@@ -1,15 +1,154 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<link rel="stylesheet" th:href="@{/app.css}" />
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Magic Eight Ball with Daily Horoscope</title>
-    <img th:src="@{/pics/eightballflash.jpeg}" alt="jpeg"/>
+    <title>Magic 8 Ball</title>
+
+    <style type="text/css">
+        image{ alignment: left}
+        h1 { font-weight: 200; font-size: 3.5em;
+        color:blue;
+        font-family: "Arial Rounded MT Bold";
+        text-align: left;
+        }
+        form {     color:blue;
+            font-family: "Arial Rounded MT Bold";
+            text-align: center; }
+        body {
+            background-color: green;}
+        #content {
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 40px;
+            border: 1px dotted black;
+            text-align: center;
+            font-family: 'Helvetica Neue', arial;
+            font-weight: 100;
+            background-color: yellowgreen;
+        }
+        h2{text-align: center;
+            color: darkgreen;
+        }
+
+        div.eight-ball {
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 40%;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+
+        div.answer {
+            background-color: #333;
+            border: 1px solid #333;
+            border-radius: 50%;
+            width:50%;
+            height: 50%;
+            margin: 25% auto;
+
+
+        }
+
+        p#eight {
+            font-size: 4em;
+            margin: 10% auto;
+            color: white;
+        }
+
+        p#answer {
+            padding: 28px;
+            color: black;
+            letter-spacing: 2px;
+            font-size:24px;
+            /*display: none;*/
+
+
+        }
+
+        #question {
+            margin: 24px;
+            padding: 10px;
+            width: 325px;
+            font-size:20px;
+        }
+
+        #info {
+            font-size: 20px;
+        }
+        select {
+            font-size: 35px;
+            text-align: center;
+            background-color: yellowgreen;
+
+        }
+
+        button {
+            font-size: 24px;
+            text-align: center;
+            background-color: yellowgreen;
+        }
+
+
+    </style>
+
 </head>
+
+<h1>   <img th:src="@{/pics/Geniepick.jpeg}" alt="jpeg"/> * * * * *   FUN and FORTUNES   * * * * *  </h1>
+
 <body>
-<h1>Magic Eight Ball with Daily Horoscope </h1>
-<p> Fortune will go here </p>>
-<img th:src="@{/pics/Geniepick.jpeg}" alt="jpeg"/>
+
+
+<div id="content">
+    <h2>Magic 8 Ball </h2>
+    <p id="info">Ask a yes or no question for the Magic 8 Ball</p>
+<!--    <input type="text" id="question" />-->
+<!--    <script th:inline = "javascript">-->
+<!--        function unhide() {-->
+<!--            let hid = document.getElementById("answer");-->
+<!--            if(hid.style.display === "none") {-->
+<!--                hid.style.display = "block";-->
+
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+<!--    <button th:onclick="'unhide()'">Submit Question</button>-->
+    <input type="text" id="question" />
+    <details>
+        <summary> ask your questions, then click for an answer</summary>
+        <p class ="answer" th:text="${answer}" id="answer"></p>
+    </details>
+    <div id="eight-ball" class="eight-ball">
+        <div class="answer">
+            <p id="eight">8</p>
+<!--            <p class ="answer" th:text="${answer}" id="answer"></p>-->
+        </div>
+    </div>
+</div>
+<p></p>
+<form role = "form" id = "sign" th:action="@{/info}" th:object="${sign}" method = "post">
+    <img th:src="@{/pics/HOROSCOPE.jpeg}" alt="jpeg"/> <p></p>
+    <select name = "sign">
+        <option th:value="'Aeries'" th:text="Aeries"></option>
+        <option th:value="'Aquarius'" th:text="Aquarius"></option>
+        <option th:value="'Cancer'" th:text="Cancer"></option>
+        <option th:value="'Capricorn'" th:text="Capricorn"></option>
+        <option th:value="'Gemini'" th:text="Gemini"></option>
+        <option th:value="'Leo'" th:text="Leo"></option>
+        <option th:value="'Libra'" th:text="Libra"></option>
+        <option th:value="'Pisces'" th:text="Pisces"></option>
+        <option th:value="'Sagittarius'" th:text="Sagittarius"></option>
+        <option th:value="'Scorpio'" th:text="Scorpio"></option>
+        <option th:value="'Taurus'" th:text="Taurus"></option>
+        <option th:value="'Virgo'" th:text="Virgo"></option>
+
+    </select>
+    <p>        </p>
+    <button type = "submit"> Daily Horoscope - Choose your Horoscope sign from the drop down above, then click here</button>
+</form>
+<form action = "/blackjack">
+    <button type = "submit"> Feeling Lucky, Click here to play BlackJack</button>
+</form>
 
 </body>
 </html>

@@ -1,0 +1,10 @@
+
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÿ°‚
+U
+java:S1854""?Remove this useless assignment to local variable "dealerCard5".(Æî
+T
+java:S1854"?Remove this useless assignment to local variable "dealerCard4".(¼öÿI
+E
+java:S1481"0Remove this unused "dealerCard4" local variable.(¼öÿI
+F
+java:S1481""0Remove this unused "dealerCard5" local variable.(Æî

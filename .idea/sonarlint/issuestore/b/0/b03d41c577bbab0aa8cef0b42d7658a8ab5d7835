@@ -1,0 +1,13 @@
+
+Q	java:S125("<This block of commented-out lines of code should be removed.(‡¿ù
+[
+java:S1128"9Remove this unused import 'org.springframework.ui.Model'.(ê†ıÿÿÿÿ8íÊ±†0
+t
+java:S1128
+"RRemove this unused import 'org.springframework.web.bind.annotation.RequestMethod'.(Ê™Ğÿûÿÿÿÿ8íÊ±†0
+s
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.ResponseBody'.(•¶¶êøÿÿÿÿ8íÊ±†0
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8íÊ±†0
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8íÊ±†0

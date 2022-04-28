@@ -1,0 +1,6 @@
+
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó²¦Îøÿÿÿÿ
+7
+java:S1116)"Remove this empty statement.(Åñ­õþÿÿÿÿ
+g
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Ó²¦Îøÿÿÿÿ

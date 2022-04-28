@@ -1,0 +1,9 @@
+
+Z
+java:S1854"?Remove this useless assignment to local variable "dealer2Card".(ŸÔ‹äûÿÿÿÿ
+K
+java:S1481"0Remove this unused "dealer2Card" local variable.(ŸÔ‹äûÿÿÿÿ
+2
+java:S1116 "Remove this empty statement.(ûÃþ³
+a
+java:S1128"FRemove this unused import 'com.detroitlabs.magiceightball.model.Deck'.(ƒ¸‰üùÿÿÿÿ

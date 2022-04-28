@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h1 { font-weight: 30; font-size: 1.2em;
+        color:black;
+        font-family: "Arial Rounded MT Bold";
+        text-align: left; }
+    body{background-color:darkgoldenrod;}
+
+
+    p1 {font-weight: 30; font-size: 1.2em;
+        color: black;
+        background-color: yellow;
+    }
+
+    p2{font-weight: 30; font-size: 1.2em;
+        color: black;
+        background-color: deepskyblue;
+    }
+
+    p3 {color: black;
+        background-color: deepskyblue;
+    }
+
+    p4 {color: black;
+        background-color: deepskyblue;
+    }
+
+    p5 {font-weight: 30; font-size: 1.2em;
+        color: black;
+        background-color: deepskyblue;
+    }
+
+    p6 {font-weight: 30; font-size: 1.2em;
+        color: black;
+        background-color: deepskyblue;
+
+    }
+
+    p7 {font-weight: 30; font-size: 1.2em;
+        color: black;
+        background-color: deepskyblue;
+
+    }
+
+    p8 {color: black;
+        background-color: indianred;
+
+    }
+
+    p9 {color: black;
+        background-color: indianred;}
+
+    p10 {color: black;
+        background-color: indianred;
+
+    }
+    p11 {color: black;
+        background-color: indianred;
+
+    }
+    p12 {color: black;
+        background-color: indianred;
+    }
+    p13 {color: black;
+        background-color: indianred;
+    }
+    p14 {color: black;
+        background-color: indianred;
+    }
+    p15{color: black;
+        background-color: yellow;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Blackjack</h1>
+<p>                                                  </p>
+<p1 id="text-area">Blackjack Game Continued!</p1>
+<p>                                                  </p>
+<h1>Blackjack</h1>
+<p>                                                  </p>
+<p2 id="text-area">Welcome to Blackjack!</p2>
+<p>                                                  </p>
+<p3> Players hand: </p3>
+<p>                                                  </p>
+<p4 th:text = "${firstCardDescription}"    ></p4>
+<p>                                                  </p>
+<p5 th:text = "${secondCardDescription}"    ></p5>
+<p>                                                  </p>
+<p6> Player total: </p6>
+<p>                                                  </p>
+<p7 th:text = "${playerscardsstay1}"    ></p7>
+<p>                                                  </p>
+<p>                                                  </p>
+<p8><u>Dealer shows:</u>> </p8>
+<p>                                                  </p>
+<p9 th:text = "${dealerCardDescription}"></p9>
+<p>                                                  </p>
+<p10 th:text = "${dealer2CardDescription}" ></p10>
+<p>                                                  </p>
+<p11 th:text = "${dealerCard3Description}" ></p11>
+<p>                                                  </p>
+<p12 th:text = "${dealerCard4Description}" ></p12>
+<p>                                                  </p>
+<p13 th:text = "${dealerCard5Description}" ></p13>
+<p>                                                  </p>
+
+<p14 th:text = "${dealerhand}" ></p14>
+<p>                                                  </p>
+<p15 th:text = "${result}"></p15>
+<p>                                                  </p>
+
+
+
+
+<form action = "/DealerStayB">
+    <button id="stay-button">Dealer < 16 must Hit</button>
+    <p>                                                  </p>
+
+</form>
+<form action = "/blackjack">
+
+    <button id="return1">NewGame</button>
+    <p>                                                  </p>
+</form>
+<form action = "/">
+    <button id="return">refresh/home page</button>
+    <p>                                                  </p>
+</form>
+
+<script src="script.js"></script>
+</body>
+
+</html>

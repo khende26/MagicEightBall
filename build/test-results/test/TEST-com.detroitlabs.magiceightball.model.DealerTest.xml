@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.detroitlabs.magiceightball.model.DealerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-28T15:31:08" hostname="Karris-MacBook-Pro.local" time="0.019">
+  <properties/>
+  <testcase name="deal()" classname="com.detroitlabs.magiceightball.model.DealerTest" time="0.019"/>
+  <system-out><![CDATA[ Player total = 8
+Dealer shows:  9 of Hearts: value of 9
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
